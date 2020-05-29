@@ -4,23 +4,9 @@ function Particle:init()
     self.pos = vector.new(WINDOW_WIDTH/2, WINDOW_HEIGHT/2)
     self.rays = {}
 
-    local angle = 360
-
-    --[[   for i = 0, 600  do 
+    for i = 1, 360 do 
         table.insert(self.rays, Ray(self.pos, math.rad(i)) )
     end 
- ]]
-    while true do 
-
-        if angle < 0 then 
-            break
-        else
-            table.insert(self.rays, Ray(self.pos, math.rad(angle)))
-            angle = utils.round((angle - 1), 1)
-        end
-
-    end
-
 end
 
 
