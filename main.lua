@@ -1,6 +1,5 @@
 -- Raycasting test in love 2d
 
--- Imports
 require "scripts/dependencies"  
 
 boundaries = {
@@ -17,7 +16,7 @@ function love.load()
     love.window.setMode(WINDOW_WIDTH, WINDOW_HEIGHT, {
         vsync = true,
         fullscreen = false,
-        resizable = true,
+        --resizable = true,
     })
 
     love.window.setTitle("Raycating - LÖVE 2D")
